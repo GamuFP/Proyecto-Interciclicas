@@ -1,7 +1,4 @@
 
-
-
-
 function element_pressed() {
     for (let i = 0; i < arguments.length; i++) {
         let element = document.getElementById(arguments[i]);

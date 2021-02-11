@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
 
-
     <title>Web Interciclicas</title>
     <script src="js/script.js"></script>
 </head>
@@ -23,6 +22,6 @@
             include_once("html/section.html");
         ?>
     </main>
-    
+
 </body>
 </html>

@@ -63,6 +63,10 @@ nav#menu{
         /*     contact      */
 nav#menu #contact{
     position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+nav#menu #contact{
     vertical-align: middle;
     background-color: var(--dark-color);
     grid-row: 2 / 3;
@@ -82,8 +86,8 @@ nav#menu #info.pressed{
     display: block;
     transform: scaleY(1) translateY(0);
 }
-
         /*     authors     */
+
 nav#menu #authors{
     vertical-align: middle;
     background-color: var(--dark-color);
