@@ -1,0 +1,29 @@
+@import "constants.css";
+@import "menu.css";
+
+
+body{
+    margin: 0;
+    font-family: 'Trocchi', serif;
+}
+header{
+    padding: 1px;
+    background-color: var(--dark-color);
+    color: var(--bright-color);
+    display: grid;
+    grid-template-columns:35px 1fr;
+    position: relative;
+    
+
+}
+h1{
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+section{
+    padding: 5px;
+    text-align: center;
+    
+}
