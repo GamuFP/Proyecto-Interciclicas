@@ -1,13 +1,18 @@
 <header>
-    <div id="menu-btn" class="unpressed" onclick="menu_btn_pressed()">
+    <div id="menu-btn" class="unpressed" onclick="element_pressed('menu-btn','menu')">
+
         <bar id="top"></bar>
         <bar id="mid"></bar>
         <bar id="bot"></bar>
     </div>
     <h1>Proyecto Interciclicas</h1>
     <nav id="menu" class="unpressed">
-        <div id="contact">
-            <h4>Contacta</h4>
+        <div id="contact" class="unpressed" onclick="element_pressed('contact','contact-title','info')">
+            <h4 id="contact-title" class="unpressed">Contacta</h4>
+            <p id="info" class="unpressed">tlf: 314 159 265
+                mail: secretaria.getafe@campusfp.es
+            </p>
+
         </div>
         <div id="authors">
             <h4>Autores</h4>
