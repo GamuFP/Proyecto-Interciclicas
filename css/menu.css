@@ -14,7 +14,6 @@
     position: relative;
     margin: auto;
     cursor: pointer;
-    
 }
 #menu-btn *{
     display: inline-block;
@@ -45,29 +44,31 @@
     transform: rotate(-45deg) translate(-5px,9px);
 }
 #menu-btn.pressed{
-    z-index: 2;
+    z-index: 12;
     transform: translateX(300px);
 }
 
 /*      menu     */
 
 nav#menu{
-    z-index: 1;
+    z-index: 11;
     display: grid;
     width: 350px;
     height: 100vh;
     position: absolute;
     transform: translateX(-100%);
     background-color: var(--bg-color);
-    grid-template-rows: 1fr 160px 160px 1fr;
+    grid-template-rows: 1fr 160px 190px 1fr;
     gap: 2px;
     text-align: center;
     font-size: 20px;
 }
+nav#menu.pressed{
+    transform: translateX(0);
+}
 
         /*      contact      */
 nav#menu #contact{
-    position: relative;
     text-align: center;
     font-size: 20px;
     vertical-align: middle;
@@ -81,7 +82,7 @@ nav#menu #contact-title{
     cursor: pointer;
 }
 nav#menu #info{
-    z-index: 1;
+    z-index: 11;
     margin-bottom: 20px;
     opacity: 0;
     transform: translateY(100%);
@@ -91,7 +92,6 @@ nav#menu #contact.pressed{
     margin-top: 0;
     border-radius: 15px 15px 0 0 ;
     height: 100%;
-    
 }
 nav#menu #info.pressed{
     opacity: 1;
@@ -101,11 +101,31 @@ nav#menu #info.pressed{
         /*     authors     */
 
 nav#menu #authors{
-    z-index: 2;
+    z-index: 12;
     vertical-align: middle;
     background-color: var(--dark-color);
     grid-row: 3 / 4;
+    user-select: none;
+    height: 80px;
 }
-nav#menu.pressed{
-    transform: translateX(0);
+nav#menu #authors-title{
+    cursor: pointer;
+    background-color: var(--dark-color);
 }
+nav#menu #author-list{
+    z-index: 10;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: scale(0) translateY(-100%);
+    font-size: 1em;
+}
+nav#menu #authors.pressed{
+    height: 100%;
+    border-radius: 0 0 15px 15px;
+}
+nav#menu #author-list.pressed{
+    opacity: 1;
+    display: block;
+    transform: scale(1) translateY(0);
+}
+
