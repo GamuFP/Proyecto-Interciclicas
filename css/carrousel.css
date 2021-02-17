@@ -20,7 +20,7 @@
 }
 #carrousel #barn .horse{
     position: relative;
-    z-index: auto;
+    z-index: 0;
     color: var(--bright-color);
     background-color: #222;
     height: 100%;
@@ -33,7 +33,7 @@
 #carrousel #barn .horse:first-child{
     margin-left: 0;
 }
-#carrousel #barn .horse:nth-child(5){
+#carrousel #barn .horse:nth-child(7){
     margin-right: 0;
 }
 /*     SELECTED    */
@@ -52,13 +52,20 @@
 #carrousel #barn ._4{
     display: inline-block;
 }
+#carrousel #barn ._5{
+    display: inline-block;
+}
+#carrousel #barn ._6{
+    display: inline-block;
+}
+
 
 
 /*     CONTROLS    */
 #carrousel button{
     position: absolute;
     height: 100%;
-    width: 100px;
+    width: 15%;
     color: var(--bright-color);
     z-index: 1;
     background-color: transparent;

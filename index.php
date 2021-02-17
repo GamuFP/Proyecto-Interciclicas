@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images\iconoInterciclicas.ico" />
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+    <?php
+    include_once("html/fonts.html");
+    ?>
 
     <title>Web Interciclicas</title>
 
