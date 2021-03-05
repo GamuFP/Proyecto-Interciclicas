@@ -1,22 +1,22 @@
 @import "constants.css";
 @import "menu.css";
 @import "carrousel.css";
-
+@import "section.css";
+@import "footer.css";
+*{
+    user-select: none;
+    transition: transform 500ms ease,
+                opacity 500ms ease, 
+                height 500ms ease,
+                border-radius 500ms ease,
+                margin 500ms ease;
+}
 body{
     margin: 0;
 
     font-family: 'Trocchi', serif;
 }
 
-header{
-    padding: 1px;
-    background-color: var(--dark-color);
-    color: var(--bright-color);
-    display: grid;
-    grid-template-columns:35px 1fr;
-    position: relative;
-    
-}
 h1{
     grid-column: 2 / 3;
     text-align: center;
@@ -25,9 +25,29 @@ h1{
     user-select: none;
     font-family: 'Merienda', cursive;
 }
-section{
-    padding: 5px;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
 
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-top: 5px solid #888;
+    border-bottom: 5px solid #888;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar-track:hover{
+    border-top: 5px solid #555;
+    border-bottom: 5px solid #555;
 }

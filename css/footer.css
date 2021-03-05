@@ -1,0 +1,6 @@
+footer{
+    height: 100px;
+    padding: 1px;
+    background-color: var(--dark-color);
+    color: var(--bright-color);
+}

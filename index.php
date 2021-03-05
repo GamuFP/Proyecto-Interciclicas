@@ -22,7 +22,9 @@
     <?php
     include_once("html/main.php");
     ?>
-
+    <?php
+    include_once("html/footer.html");
+    ?>
 
     <script src="js/script.js"></script>
 </body>
