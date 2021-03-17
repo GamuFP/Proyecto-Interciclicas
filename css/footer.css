@@ -15,3 +15,8 @@ footer img.pressed{
     transform: scale(1);
     opacity: 1;
 }
+footer p{
+    color: #999;
+    text-align: center;
+    margin-top:40px ;
+}
