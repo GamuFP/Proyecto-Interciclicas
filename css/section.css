@@ -26,16 +26,19 @@ section>p{
 }
 #grupos div:nth-child(1){
     border-radius: var(--br) 0 var(--br) 0;
+    box-shadow: -3px -3px 10px 1px #0005;
 }
 #grupos div:nth-child(2){
     border-radius:  0 var(--br) 0 var(--br);
+    box-shadow: 3px -3px 10px 1px #0005;
 }
 #grupos div:nth-child(3){
     border-radius: 0 var(--br) 0 var(--br);
+    box-shadow: -3px 3px 10px 2px #0005;
 }
 #grupos div:nth-child(4){
-    
     border-radius: var(--br) 0 var(--br) 0;
+    box-shadow: 3px 3px 10px 2px #0005;
 }
 #grupos div h3{
     text-align: center;

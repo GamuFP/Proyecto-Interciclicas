@@ -33,6 +33,7 @@ header{
 }
 #menu-btn #bot{
     top:20px;
+
 }
 #menu-btn.pressed #bot{
     transform: rotate(45deg) translate(-5px,-9px);
@@ -96,7 +97,7 @@ nav#menu #info{
     z-index: 11;
     margin-bottom: 20px;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(80%);
     font-size: 1em;
 }
 nav#menu #contact.pressed{

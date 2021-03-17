@@ -4,3 +4,14 @@ footer{
     background-color: var(--dark-color);
     color: var(--bright-color);
 }
+footer img{
+    position: absolute;
+    transform: scale(0.01);
+    top: 300px;
+    opacity: 0;
+    transition: scale 100ms ease, opacity 100ms ease;
+}
+footer img.pressed{
+    transform: scale(1);
+    opacity: 1;
+}

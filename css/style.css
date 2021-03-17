@@ -6,15 +6,15 @@
 *{
     user-select: none;
     transition: transform 500ms ease,
-                opacity 500ms ease, 
+                opacity 400ms ease, 
                 height 500ms ease,
                 border-radius 500ms ease,
                 margin 500ms ease;
 }
 body{
     margin: 0;
-
     font-family: 'Trocchi', serif;
+    animation: bg_color 360s ease infinite alternate;
 }
 
 h1{
@@ -24,13 +24,13 @@ h1{
     font-size: 50px;
     user-select: none;
     font-family: 'Merienda', cursive;
+    animation: title_color 360s ease infinite alternate-reverse;
 }
 
 
 
 ::-webkit-scrollbar {
     width: 10px;
-
 }
   
 ::-webkit-scrollbar-track {
@@ -50,4 +50,38 @@ h1{
 ::-webkit-scrollbar-track:hover{
     border-top: 5px solid #555;
     border-bottom: 5px solid #555;
+}
+@keyframes bg_color{
+    0%{
+        background-color:rgb(255,174,174);
+    }
+    25%{
+        background-color:rgb(255,255,174);
+    }
+    50%{
+        background-color:rgb(174,255,174);
+    }
+    75%{
+        background-color:rgb(174,255,255);
+    }
+    100%{
+        background-color: rgb(174,174,255);
+    }
+}
+@keyframes title_color{
+    0%{
+        color:rgb(255,174,174);
+    }
+    25%{
+        color:rgb(255,255,174);
+    }
+    50%{
+        color:rgb(174,255,174);
+    }
+    75%{
+        color:rgb(174,255,255);
+    }
+    100%{
+        color: rgb(174,174,255);
+    }
 }
